@@ -23,6 +23,9 @@
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+
+  --accent-color: #0024f0; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,7 +33,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b;  /* The default color of the main navmenu links */
+
   --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+
+  --nav-hover-color: blue; /* Applied to main navmenu links when they are hovered over or active */
+
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -223,9 +230,16 @@ h6 {
   font-family: var(--nav-font);
   display: flex;
   align-items: center;
+
   padding: 10px 18px;
   margin-bottom: 8px;
   font-size: 15px;
+
+  text-align: center;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  font-size: 12px;
+
   border-radius: 50px;
   background: color-mix(in srgb, var(--default-color), transparent 92%);
   height: 56px;
@@ -285,6 +299,10 @@ h6 {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+
+  font-size: 15px;
+  text-align: center;
+
   position: relative;
 }
 
@@ -550,7 +568,9 @@ section,
 
 .hero h2 {
   margin: 0;
+
   font-size: 64px;
+  font-size: 80px;
   font-weight: 700;
 }
 
@@ -1450,6 +1470,20 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: 0.6rem;
+  background: transparent;
+  ;
+}
+
+::-webkit-scrollbar-thumb{
+  background: black;
+  border-radius: .25rem;
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
